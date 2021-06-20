@@ -53,12 +53,20 @@
 
     <script>
         $('#services').click(function() {
-            $('#services ul').toggle();
+            if ($('#services ul').style.display === 'none') {
+                $('#services ul').style.display === 'block';
+            } else {
+                $('#services ul').style.display === 'none';
+            }
         });
 
         $('#blog').click(function() {
-            $('#blog ul').toggle();
-        })
+            if ($('#blog ul').style.display === 'none') {
+                $('#blog ul').style.display === 'block';
+            } else {
+                $('#blog ul').style.display === 'none';
+            }
+        });
     </script>
 </body>
 
